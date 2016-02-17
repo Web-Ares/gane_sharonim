@@ -488,14 +488,17 @@
     font: 600 16px Arial, Helvetica, sans-serif;
 }
 .niceCheck {
+    display: none;
     width: 20px;
     height: 20px;
     margin-left: 5px;
-    display: inline-block;
     vertical-align: middle;
     cursor: pointer;
     border: 1px solid #9c9c9c;
     overflow: hidden;
+}
+.niceCheck + .niceCheck{
+    display: inline-block;
 }
 .niceChecked {
     background: url("../img/icons-check.png") no-repeat center;
