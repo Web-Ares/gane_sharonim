@@ -596,7 +596,7 @@ input.captcha__input{
 .map{
     width: 280px;
     height: 137px;
-    margin: 0 auto 23px;
+    margin: 23px auto 23px;
     border: 2px solid #ec6a22;
 }
 /* --------------- /map --------------- */
