@@ -5,7 +5,7 @@ $(function(){
     });
 
     $('.gallery').each(function () {
-        $(".gallery__item").fancybox({
+        $(".gallery__img").fancybox({
             padding : 0,
             helpers: {
                 overlay: {
