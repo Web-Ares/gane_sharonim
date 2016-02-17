@@ -277,7 +277,6 @@
     counter-reset: li;
     list-style: none;
     margin-bottom: 19px;
-    padding-right: 15px;
 }
 .text ol li{
     font-weight: 700;
@@ -292,7 +291,7 @@
     color: #ec6a22;
 }
 .text_payments{
-    margin: 0 auto 5px;
+    padding-bottom: 4px;
 }
 .text_payments p{
     margin-bottom: 19px;
