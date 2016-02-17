@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* ---------------- ares-select ------------------ */
+.ares-select{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 11px;
+    vertical-align: top;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 27px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #9c9c9c;
+    -webkit-transition: border 0.3s ease;
+    transition: border 0.3s ease;
+}
+.ares-select.active:after,
+.ares-select.active:before{
+    opacity: 1;
+}
+.ares-select__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+    padding: 5px 12px 0 25px;
+}
+.ares-select__item img {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    width: 22px;
+    height: 22px;
+}
+.ares-select_selected .ares-select__item {
+    color: #333;
+}
+.ares-select__item:after {
+    top: 10px;
+    left: 7px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(119, 119, 119, 0);
+    border-bottom-color: #777;
+    border-width: 5px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transition: transform .3s ease, top .3s ease;
+    -webkit-transition: transform .3s ease, top .3s ease;
+}
+.active .ares-select__item:after{
+    top: 5px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+.ares-select_mobile select {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    width: 100%;
+    bottom: -1px;
+}
+.ares-select_custom select{
+    position: absolute;
+    left: -100000px;
+}
+.ares-select__popup {
+    position: absolute;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    z-index: 10;
+    overflow: hidden;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    margin: -1px 0 0 -3px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.calculator_index .ares-select__popup{
+    background-color: rgba(255,255,255,.8);
+}
+.ares-select__popup ul {
+    z-index: 1;
+}
+.ares-select__popup li{
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 7px 17px;
+    font-size: 15px;
+    text-align: left;
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+}
+.ares-select__popup li:hover{
+    color: #00a8e3;
+}
+.ares-select__popup li img {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 22px;
+    height: 22px;
+}
+.ares-select__popup li.active {
+    background: #e4e6e8;
+}
+.ares-select__popup .iScrollVerticalScrollbar {
+    position: absolute;
+    width: 15px;
+    top: 0;
+    bottom: 0;
+    background: #ccc;
+    right: 0;
+    z-index: 3;
+    -webkit-transform: translateZ(0);
+}
+.ares-select__popup .iScrollIndicator {
+    background: #aaa;
+}
+/* ---------------- /ares-select ------------------ */
+.nicescroll-rails{
+    background-color: #999;
+}
