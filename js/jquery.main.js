@@ -4,6 +4,10 @@ $(function(){
         Menu($(this));
     });
 
+    $.each($('.map'), function () {
+        new Map($(this));
+    });
+
     $('.gallery').each(function () {
         $(".gallery__img").fancybox({
             padding : 0,
@@ -13,10 +17,6 @@ $(function(){
                 }
             }
         });
-    });
-
-    $.each($('.map'), function () {
-        new Map($(this));
     });
 
 } );
