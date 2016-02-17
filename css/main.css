@@ -272,6 +272,54 @@
     border-radius: 50px;
     background-color: #ec6a22;
 }
+.text ol {
+    position: relative;
+    counter-reset: li;
+    list-style: none;
+    margin-bottom: 19px;
+    padding-right: 15px;
+}
+.text ol li{
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.text ol li:before{
+    counter-increment: li;
+    content: counters(li,".") ".";
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    color: #ec6a22;
+}
+.text_payments{
+    margin: 0 auto 5px;
+}
+.text_payments p{
+    margin-bottom: 19px;
+}
+.text_payments ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 63%;
+    padding-left: 27px;
+}
+.text_payments ul.text__list_left{
+    width: 35%;
+    padding-left: 0;
+}
+.text_payments .text__note {
+    margin-bottom: 31px;
+}
+.text_payments li {
+    position: relative;
+    padding-right: 14px;
+    margin-bottom: 6px;
+    font-size: 11px;
+    line-height: 16px;
+}
+.text_payments .text__topic {
+    margin-bottom: 12px;
+}
 /* --------------- /text --------------- */
 
 /* --------------- about --------------- */
