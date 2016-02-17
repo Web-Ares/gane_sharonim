@@ -538,7 +538,7 @@
     margin-bottom: 11px;
 }
 .niceCheck {
-    display: none;
+    display: inline-block;
     width: 20px;
     height: 20px;
     margin-left: 5px;
@@ -547,14 +547,11 @@
     border: 1px solid #9c9c9c;
     overflow: hidden;
 }
-.niceCheck + .niceCheck{
-    display: inline-block;
-}
 .niceChecked {
     background: url("../img/icons-check.png") no-repeat center;
 }
-.niceCheck input {
-    visibility: hidden;
+.callback__check input{
+    display: none;
 }
 .niceCheckDisabled {
     opacity: .7;
