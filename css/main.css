@@ -534,6 +534,9 @@
     color: #fff;
     font: 600 16px Arial, Helvetica, sans-serif;
 }
+.callback__check{
+    margin-bottom: 11px;
+}
 .niceCheck {
     display: none;
     width: 20px;
