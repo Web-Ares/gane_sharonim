@@ -248,15 +248,22 @@
     margin-bottom: 15px;
     font-size: 12px;
 }
-.text__topic{
+.text__title{
     margin-bottom: 8px;
     font-size: 18px;
     color: #ec6a22;
+}
+.text__topic{
+    margin-bottom: 6px;
+    font-weight: 600;
 }
 .text__list {
     margin-bottom: 23px;
     font-size: 16px;
     line-height: 22px;
+}
+.text__answers{
+    margin-bottom: 23px;
 }
 .text__list li{
     position: relative;
@@ -271,6 +278,10 @@
     height: 7px;
     border-radius: 50px;
     background-color: #ec6a22;
+}
+.text_questions{
+    padding-top: 21px;
+    font-size: 13px;
 }
 /* --------------- /text --------------- */
 
@@ -356,6 +367,53 @@
 }
 /* --------------- /gallery --------------- */
 
+/* --------------- team --------------- */
+.team{
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 23px;
+    text-align: justify;
+}
+.team:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.team__item{
+    display: inline-block;
+    vertical-align: top;
+    width: 88px;
+    margin-bottom: 32px;
+    line-height: 15px;
+    text-align: center;
+    color: #10673a;
+}
+.team__img{
+    display: block;
+    width: inherit;
+    height: 90px;
+    margin-bottom: 3px;
+    border: 2px solid #ec6a22;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+.team__name{
+    font-weight: bold;
+}
+/* --------------- /team --------------- */
+
+/* --------------- team-note --------------- */
+.team-note{
+    margin-bottom: 19px;
+    padding: 16px 0;
+    border-top: 4px dotted #ec6a22;
+    border-bottom: 4px dotted #ec6a22;
+    text-align: center;
+}
+/* --------------- /team-note --------------- */
+
 /* --------------- sentence --------------- */
 .sentence{
     width: 280px;
@@ -380,6 +438,115 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ec6a22',GradientType=1 );
 }
 /* --------------- sentence --------------- */
+
+/* --------------- callback --------------- */
+.callback{
+    width: 250px;
+    margin: 0 auto 27px;
+    padding-top: 6px;
+    text-align: justify;
+}
+.callback label{
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: right;
+}
+.callback label span{
+    color: #ec6a22;
+}
+.callback input,
+.callback textarea{
+    display: block;
+    width: 100%;
+    height: 27px;
+    margin-bottom: 11px;
+    padding: 0 10px;
+    border: 1px solid #9c9c9c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.callback textarea{
+    padding: 5px 10px;
+    height: 60px;
+}
+.callback__half{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+.callback__send{
+    display: block;
+    width: 153px;
+    height: 41px;
+    margin: 0 auto;
+    border: none;
+    border-top: 4px solid #ec6a22;
+    background-color: #10673a;
+    color: #fff;
+    font: 600 16px Arial, Helvetica, sans-serif;
+}
+.niceCheck {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #9c9c9c;
+    overflow: hidden;
+}
+.niceChecked {
+    background: url("../img/icons-check.png") no-repeat center;
+}
+.niceCheck input {
+    visibility: hidden;
+}
+.niceCheckDisabled {
+    opacity: .7;
+}
+/* --------------- /callback --------------- */
+
+/* --------------- captcha --------------- */
+.captcha{
+    text-align: justify;
+}
+.captcha:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.captcha__refresh{
+    display: inline-block;
+    vertical-align: middle;
+    color: #777;
+    text-decoration: underline;
+}
+.captcha__box{
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 27px;
+    color: #ec6a22;
+    font-size: 16px;
+    font-weight: bold;
+}
+input.captcha__input{
+    display: inline-block;
+    vertical-align: middle;
+    width: 98px;
+    margin-bottom: 0;
+}
+/* --------------- /captcha --------------- */
+
+/* --------------- map --------------- */
+.map{
+    width: 280px;
+    height: 137px;
+    margin: 0 auto 23px;
+    border: 2px solid #ec6a22;
+}
+/* --------------- /map --------------- */
 
 /* --------------- news --------------- */
 .news{
